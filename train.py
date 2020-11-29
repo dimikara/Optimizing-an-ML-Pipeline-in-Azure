@@ -45,8 +45,7 @@ def clean_data(data):
 x, y = clean_data(ds)
 
 # TODO: Split data into train and test sets.
-
-### YOUR CODE HERE ###
+# Documentation: https://scikit-learn.org/stable/modules/generated/sklearn.model_selection.train_test_split.html
 x_train, x_test, y_train, y_test = train_test_split(x, y, random_state=0)
 
 run = Run.get_context()
