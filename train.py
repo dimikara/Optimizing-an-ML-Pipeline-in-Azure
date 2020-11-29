@@ -14,15 +14,7 @@ from azureml.data.dataset_factory import TabularDatasetFactory
 # Data is located at:
 # "https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv"
 
-ds = ### YOUR CODE HERE ###
-
-x, y = clean_data(ds)
-
-# TODO: Split data into train and test sets.
-
-### YOUR CODE HERE ###a
-
-run = Run.get_context()
+ds = TabularDatasetFactory.from_delimited_files(['https://automlsamplenotebookdata.blob.core.windows.net/automl-sample-notebook-data/bankmarketing_train.csv'])
 
 def clean_data(data):
     # Dict for cleaning data
@@ -49,7 +41,15 @@ def clean_data(data):
     x_df["poutcome"] = x_df.poutcome.apply(lambda s: 1 if s == "success" else 0)
 
     y_df = x_df.pop("y").apply(lambda s: 1 if s == "yes" else 0)
-    
+
+x, y = clean_data(ds)
+
+# TODO: Split data into train and test sets.
+
+### YOUR CODE HERE ###
+x_train,x_test,y_train,y_test = train_test_split(x,y,random_state=0)
+
+run = Run.get_context()
 
 def main():
     # Add arguments to script
