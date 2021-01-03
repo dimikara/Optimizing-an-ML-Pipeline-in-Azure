@@ -8,6 +8,7 @@
    * [Pipeline comparison](#Pipeline-comparison)
    * [Future work](#Future-work)
    * [Proof of cluster clean up](#Proof-of-cluster-clean-up)
+   * [Citation](#Citation)
    * [References](#References)
 
 ***
@@ -158,6 +159,11 @@ Concluding, the high data imbalance is something that can be handled in a future
 
 ## Proof of cluster clean up
 ![Cluster Clean Up](img/Cluster_clean_up_Code.JPG?raw=true "Cluster clean up")
+
+***
+## Citation
+
+[Moro et al., 2014] S. Moro, P. Cortez and P. Rita. A Data-Driven Approach to Predict the Success of Bank Telemarketing. Decision Support Systems, Elsevier, 62:22-31, June 2014
 
 ***
 ## References
