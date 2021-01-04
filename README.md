@@ -110,16 +110,14 @@ This parameter sets how many cross validations to perform, based on the same num
 **Comparison of the two models and their performance. Differences in accuracy & architecture - comments**
 
 
-| Model | |
+| HyperDrive Model | |
 | :---: | :---: |
-| HyperDrive Model |  |
 | id | HD_fda34223-a94c-456b-8bf7-52e84aa1d17e_14  |
 | Accuracy | 0.9176024279210926 |
 
 
-| Model |  |
-| :---: | :---: |
 | AutoML Model | |
+| :---: | :---: |
 | id | AutoML_ee4a685e-34f2-4031-a4f9-fe96ff33836c_13 |
 | Accuracy | 0.916176024279211 |
 | AUC_weighted | 0.9469939634729121 |
