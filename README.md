@@ -110,21 +110,21 @@ This parameter sets how many cross validations to perform, based on the same num
 **Comparison of the two models and their performance. Differences in accuracy & architecture - comments**
 
 
-| Model | | |
-| :---: | :---: | :---: |
-| HyperDrive Model |  | |
-| id | HD_fda34223-a94c-456b-8bf7-52e84aa1d17e_14  | |
-| Accuracy | 0.9176024279210926 |  |
-|  |  |  |
+| Model | |
+| :---: | :---: |
+| HyperDrive Model |  |
+| id | HD_fda34223-a94c-456b-8bf7-52e84aa1d17e_14  |
+| Accuracy | 0.9176024279210926 |
+|  |  |
 
-| Model |  |  |
-| :---: | :---: | :---: |
-| AutoML Model | | |
-| id | AutoML_ee4a685e-34f2-4031-a4f9-fe96ff33836c_13 | |
-| Accuracy | 0.916176024279211 |  |
-| AUC_weighted | 0.9469939634729121 |  |
-| Algortithm | VotingEnsemble |  |
-|  |  |  |
+| Model |  |
+| :---: | :---: |
+| AutoML Model | |
+| id | AutoML_ee4a685e-34f2-4031-a4f9-fe96ff33836c_13 |
+| Accuracy | 0.916176024279211 |
+| AUC_weighted | 0.9469939634729121 |
+| Algortithm | VotingEnsemble |
+|  |  |
 
 
 The difference in accuracy between the two models is rather trivial and although the HyperDrive model performed better in terms of accuracy, I am of the opinion that the AutoML model is actually better because of its **AUC_weighted** metric which equals to **0.9469939634729121** and is more fit for the highly imbalanced data that we have here. If we were given more time to run the AutoML, the resulting model would certainly be much more better. And the best thing is that AutoML would make all the necessary calculations, trainings, validations, etc. without the need for us to do anything. This is the difference with the Scikit-learn Logistic Regression pipeline, in which we have to make any adjustments, changes, etc. by ourselves and come to a final model after many trials & errors. 
